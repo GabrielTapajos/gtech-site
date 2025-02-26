@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f0f0f0;
 }
 
 .container {
@@ -43,7 +44,7 @@ nav ul li a {
 }
 
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
+    background: url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
     height: 100vh;
     display: flex;
@@ -57,17 +58,22 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
-.services {
+.about, .services, .contact {
     padding: 50px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.services h2 {
+.about h2, .services h2, .contact h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .service {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .service h3 {
@@ -75,53 +81,39 @@ nav ul li a {
     color: #fff;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-.service ul {
-    list-style: none;
-    padding: 0;
+.service h3 a {
+    color: #fff;
+    text-decoration: none;
 }
 
-.service ul li {
-    background: #f4f4f4;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-.contact {
-    padding: 50px 0;
-    background: #f4f4f4;
-}
-
-.contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
+.service img {
     width: 100%;
-    padding: 10px;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
-form button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background: #333;
+.contact {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #25D366;
     color: #fff;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
 }
 
 footer {
@@ -139,5 +131,9 @@ footer {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    .service img {
+        max-width: 100%;
     }
 }
